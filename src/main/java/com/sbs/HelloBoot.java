@@ -1,0 +1,13 @@
+package com.sbs;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloBoot {
+    @RequestMapping(value = "/hello", method = {RequestMethod.GET,RequestMethod.POST })
+    public String hello(){
+        return "Hello String Boot";
+    }
+}
