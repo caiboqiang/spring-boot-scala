@@ -27,6 +27,6 @@ public class aCrontroller {
             System.out.println(c.getName());
             System.out.println(c.getAge());
         }
-        return "查询数据";
+        return "查询数据 ";
     }
 }
