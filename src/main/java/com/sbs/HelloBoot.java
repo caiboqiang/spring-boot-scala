@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloBoot {
-    @RequestMapping(value = "/hello", method = {RequestMethod.GET,RequestMethod.POST })
-    public String hello(){
-        return "Hello String Boot";
+    @RequestMapping(value = "/hello", method = {RequestMethod.GET, RequestMethod.POST})
+    public String hello() {
+        return "Hello String Boot" ;
     }
 }

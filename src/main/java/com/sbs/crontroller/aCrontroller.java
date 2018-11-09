@@ -10,23 +10,25 @@ import org.springframework.web.bind.annotation.RestController;
 public class aCrontroller {
     @Autowired
     private aService aService;
-    @RequestMapping(value = "/add")
-    public String add(){
+
+    @RequestMapping(value = "/add" )
+    public String add() {
         C a = new C();
         a.setId(55);
-        a.setName("熊大");
+        a.setName("熊大" );
         a.setAge(50);
         aService.save(a);
-        return "添加数据";
+        return "添加数据" ;
     }
-    @RequestMapping(value = "getList")
-    public String getList(){
+
+    @RequestMapping(value = "getList" )
+    public String getList() {
         Iterable<C> iterable = aService.getA();
-        for(C c: iterable){
+        for (C c : iterable) {
             System.out.println(c.getId());
             System.out.println(c.getName());
             System.out.println(c.getAge());
         }
-        return "查询数据 ";
+        return "查询数据 " ;
     }
 }

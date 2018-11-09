@@ -13,12 +13,13 @@ public class aService {
 
     @Autowired
     private aRepository arepository;
+
     @Transactional
-    public void save(C a){
+    public void save(C a) {
         arepository.save(a);
     }
 
-    public Iterable<C> getA(){
-      return  arepository.findAll();
+    public Iterable<C> getA() {
+        return arepository.findAll();
     }
 }
